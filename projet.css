@@ -1,0 +1,141 @@
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    position: fixed;
+    background-color: #ffffff;
+    width: 96%;
+    z-index: 1;
+    box-shadow: 0 0 20px gray;
+}
+#textLogo{
+    color: rgba(16, 144, 203, 1);
+}
+#all-link{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+.nav-link{
+    padding: 0 8px;
+    position: relative;
+}
+.nav-link::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    bottom: 17px;
+    left: 0;
+    border-radius: 50%;
+    transition: background 0.5s ease;
+}
+.nav-link:hover::before {
+    background-color: rgba(8, 211, 187, 1);
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: color 0.3s ease;
+}
+#all-link a:hover{
+    color: rgba(16, 144, 203, 1);
+}
+#all-link #linkContact {
+    background-color: rgba(16, 144, 203, 1);
+    padding:  10px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 2px solid rgba(16, 144, 203, 1);
+    transition: color 0.3s ease;
+}
+#all-link #linkContact:hover{
+    background-color: #ffffff;
+    color: rgba(16, 144, 203, 1);
+    border: 2px solid rgb(240, 240, 240);
+}
+#sectionOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(16, 144, 203, 0.1);
+    padding: 0 80px;
+    position: relative;
+}
+#sectionOne::before{
+    content: '';
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 23vh;
+    background-image: url('./gren.png');
+    background-repeat: no-repeat;
+}
+#sectionOne::after{
+    content: '';
+    width: 50px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    background-image: url('./blue.png');
+    background-repeat: no-repeat;
+}
+#partOne{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#partOne h1{
+    line-height: 45px;
+}
+#partOne h1 span{
+    color: rgba(16, 144, 203, 1);
+}
+#partOne p{
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(92, 92, 92, 1);
+}
+#btnOne,#btnTwo{
+    padding: 12px 40px;
+    border: 1px solid rgba(16, 144, 203, 1);
+    text-decoration: none;
+    border-radius: 10px ;
+}
+#btnOne{
+    background-color: rgba(16, 144, 203, 1);
+    color: #ffffff;
+}
+#btnOne:hover{
+    background-color: rgb(16, 127, 179);
+    border: 1px solid rgb(16, 127, 179);
+}
+#btnTwo{
+    background-color: #ffffff;
+    color: rgba(16, 144, 203, 1);
+}
+#btnTwo:hover{
+    background-color: rgb(235, 235, 235);
+}
+#btn{
+    display: flex;
+    gap: 20px;
+}
+#partTwo img{
+    width: auto;
+    height: 600px;
+}
